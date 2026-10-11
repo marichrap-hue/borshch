@@ -34,3 +34,24 @@ body,
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Зелень, що сиплеться на хіро (Herbs.tsx): падіння з обертанням + покачування */
+@keyframes herb-fall {
+  from { transform: translateY(-25vh) rotate(var(--r0)); }
+  to { transform: translateY(110vh) rotate(var(--r1)); }
+}
+@keyframes herb-sway {
+  from { transform: translateX(-14px) rotate(-6deg); }
+  to { transform: translateX(14px) rotate(6deg); }
+}
+.herb {
+  animation: herb-fall var(--dur) linear var(--delay) infinite;
+  will-change: transform;
+}
+.herb-sway {
+  animation: herb-sway var(--sway) ease-in-out calc(var(--delay) / 2) infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .herb, .herb-sway { animation: none; }
+  .herb { transform: translateY(40vh) rotate(var(--r0)); }
+}

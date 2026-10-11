@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import { Card } from './components/Card'
 import { HeroCard } from './components/HeroCard'
+import { Herbs } from './components/Herbs'
 import { Note } from './components/Note'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -48,13 +49,14 @@ function Header() {
 /** Секція 1 — проблема (Star): у кожного свій борщ, а продукти одні. Світлий фон. */
 function Hero() {
   return (
-    <section data-section="hero" className="relative flex min-h-[100vh] flex-col items-center bg-wine px-[40px] pt-[150px] text-center text-white">
-      <h1 className="max-w-[820px] font-display text-[52px] leading-[1.12] tracking-[-0.01em]">
+    <section data-section="hero" className="relative flex min-h-[100vh] flex-col items-center overflow-hidden bg-wine px-[40px] pt-[150px] text-center text-white">
+      <Herbs />
+      <h1 className="relative z-10 max-w-[820px] font-display text-[52px] leading-[1.12] tracking-[-0.01em]">
         У кожного свій борщ!
         <br />
         Але продукти на всіх одні…
       </h1>
-      <p className="mt-[25px] max-w-[520px] text-[18px] leading-[1.5] text-white/85">
+      <p className="relative z-10 mt-[25px] max-w-[520px] text-[18px] leading-[1.5] text-white/85">
         Думав, просто пограєш із друзями? Подивишся, хто торгується до останнього, хто краде буряк, а хто тримає
         сметану про запас.
       </p>
