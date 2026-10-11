@@ -32,16 +32,8 @@ export default function App() {
 
 function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-[40px] py-[20px] text-white">
+    <header className="fixed inset-x-0 top-0 z-30 flex items-center px-[40px] py-[20px] text-white">
       <span className="font-display text-[22px]">Борщ</span>
-      <a
-        href="https://lordofboards.com.ua/nastilna-hra-borshch/"
-        target="_blank"
-        rel="noreferrer"
-        className="text-[14px] font-bold text-white/90 underline-offset-4 hover:underline"
-      >
-        Придбати 950 ₴
-      </a>
     </header>
   )
 }
