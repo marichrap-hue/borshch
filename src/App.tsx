@@ -75,12 +75,12 @@ function Market() {
   return (
     <section data-section="market" className="relative flex min-h-[120vh] flex-col items-center bg-tomato px-[40px] pt-[160px] text-center text-white">
       <div className="relative h-[520px] w-full max-w-[900px]">
-        {/* продукти на ринку — кола-плейсхолдери з вайрфрейму, поки немає карт інгредієнтів */}
-        <Produce className="left-[14%] top-[6%] h-[110px] w-[110px]" label="Буряк" tone="bg-beet" />
-        <Produce className="left-[26%] top-[26%] h-[70px] w-[70px]" label="Часник" tone="bg-[#f0c75e]" dark />
-        <Produce className="right-[16%] top-[14%] h-[60px] w-[60px]" label="Сіль" tone="bg-[#f0c75e]" dark />
-        <Produce className="right-[22%] top-[52%] h-[90px] w-[90px]" label="Морква" tone="bg-[#f08a2a]" />
-        <Produce className="left-[18%] top-[62%] h-[80px] w-[80px]" label="Капуста" tone="bg-dill" />
+        {/* продукти на ринку — справжні карти інгредієнтів (вирізані з фото гри, 11.10.2026) */}
+        <Card src="./img/cards/buryak.png" alt="Карта: Буряк" className="left-[8%] top-[4%] w-[150px] rotate-[-12deg]" />
+        <Card src="./img/cards/morkva.png" alt="Карта: Морква" className="left-[22%] top-[48%] w-[140px] rotate-[7deg]" />
+        <Card src="./img/cards/cybulya.png" alt="Карта: Цибуля" className="right-[24%] top-[2%] w-[140px] rotate-[10deg]" />
+        <Card src="./img/cards/kapusta.png" alt="Карта: Капуста білоголова" className="right-[10%] top-[44%] w-[150px] rotate-[-6deg]" />
+        <Card src="./img/cards/tomat.png" alt="Карта: Квашений томат" className="left-[40%] top-[70%] w-[130px] rotate-[3deg]" />
         <Note side="right" className="right-0 top-[40%]">
           Продукти для твого борщу не завжди приходять самі. Шукай потрібне на спільному ринку й міняй те, що маєш.
         </Note>
@@ -109,6 +109,7 @@ function Pepper() {
         {/* суперник підсипає перцю — карта з цибулею; сметана прикриває */}
         <Card src="./img/card-cybulya.png" alt="Карта: сусід сипле цибулю в казан" className="left-1/2 top-[30px] w-[230px] -translate-x-[70%] rotate-[-10deg]" />
         <Card src="./img/card-babusya.png" alt="Карта: бабуся біля казана зі сметаною" className="left-1/2 top-[80px] w-[230px] -translate-x-[20%] rotate-[8deg]" />
+        <Card src="./img/cards/perets.png" alt="Карта: Перець вогник" className="right-[6%] top-[-10px] w-[150px] rotate-[18deg]" />
       </div>
       <h2 className="mt-[20px] max-w-[760px] font-display text-[44px] leading-[1.12] tracking-[-0.01em]">
         Тобі підсипали перцю?
@@ -173,18 +174,6 @@ function Outro() {
         Придбати 950 ₴
       </a>
     </section>
-  )
-}
-
-function Produce({ className, label, tone, dark }: { className: string; label: string; tone: string; dark?: boolean }) {
-  return (
-    <div
-      className={`absolute flex items-center justify-center rounded-full text-[12px] font-bold ${tone} ${dark ? 'text-ink' : 'text-white'} ${className}`}
-      aria-label={label}
-      title={label}
-    >
-      {label}
-    </div>
   )
 }
 
