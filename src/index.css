@@ -1,4 +1,10 @@
 @import 'tailwindcss';
+@font-face {
+  font-family: 'Traditional Heavy';
+  src: url('/fonts/TraditionalHeavy.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
 
 /*
  * Палітра лендингу «Борщ» — з гами гри (коробка: кремово-жовте тло, помідор,
@@ -7,7 +13,7 @@
  */
 @theme {
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-display: 'Ruslan Display', 'Inter', system-ui, sans-serif;
+  --font-display: 'Traditional Heavy', 'Inter', system-ui, sans-serif;
   --color-cream: #f3e7cf;
   --color-cream-deep: #e8d7b4;
   --color-tomato: #d94a1e;
