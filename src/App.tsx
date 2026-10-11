@@ -48,7 +48,7 @@ function Header() {
 /** Секція 1 — проблема (Star): у кожного свій борщ, а продукти одні. Світлий фон. */
 function Hero() {
   return (
-    <section data-section="hero" className="relative flex min-h-[100vh] flex-col items-center bg-soot px-[40px] pt-[150px] text-center text-white">
+    <section data-section="hero" className="relative flex min-h-[100vh] flex-col items-center bg-wine px-[40px] pt-[150px] text-center text-white">
       <h1 className="max-w-[820px] font-display text-[52px] leading-[1.12] tracking-[-0.01em]">
         У кожного свій борщ!
         <br />
@@ -99,7 +99,7 @@ function Market() {
 /** Секція 3 — перчинка і сметана (Chain): темний теплий фон. */
 function Pepper() {
   return (
-    <section data-section="pepper" className="relative flex min-h-[120vh] flex-col items-center bg-beet px-[40px] pt-[120px] text-center text-white">
+    <section data-section="pepper" className="relative flex min-h-[120vh] flex-col items-center bg-soot px-[40px] pt-[120px] text-center text-white">
       <div className="relative h-[560px] w-full max-w-[900px]">
         <Note side="left" className="left-0 top-[20%]">
           Інші можуть забрати продукт із твого борщу. Деякі карти дозволяють відповісти в найпотрібніший момент.
@@ -156,7 +156,7 @@ function Recipe() {
 /** Фінал: коробка і кнопка. */
 function Outro() {
   return (
-    <section data-section="outro" className="relative flex min-h-[100vh] flex-col items-center justify-center bg-soot px-[40px] py-[120px] text-center text-white">
+    <section data-section="outro" className="relative flex min-h-[100vh] flex-col items-center justify-center bg-wine px-[40px] py-[120px] text-center text-white">
       <img src="./img/box-full.png" alt="Коробка гри Борщ" className="w-[420px] max-w-full rounded-[18px] shadow-[0_40px_80px_rgba(0,0,0,0.4)]" />
       <h2 className="mt-[50px] max-w-[700px] font-display text-[44px] leading-[1.12] tracking-[-0.01em]">Зваримо?</h2>
       <p className="mt-[20px] max-w-[520px] text-[18px] leading-[1.5] text-white/85">
