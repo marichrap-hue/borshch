@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/*
+ * Палітра лендингу «Борщ» — з гами гри (коробка: кремово-жовте тло, помідор,
+ * морква, зелень кропу, темне дерево). Стратегія з ТЗ: фон темний або кольоровий,
+ * але контрастний до світлої карти; колір змінюється в кожній секції.
+ */
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-cream: #f3e7cf;
+  --color-cream-deep: #e8d7b4;
+  --color-tomato: #d94a1e;
+  --color-tomato-deep: #b73a12;
+  --color-soot: #2a1a14;
+  --color-soot-light: #3d2a22;
+  --color-dill: #2f7a3e;
+  --color-dill-deep: #22602f;
+  --color-ink: #2a1a14;
+  --color-beet: #8b1d3a;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
