@@ -32,7 +32,7 @@ export default function App() {
 function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-[40px] py-[20px] mix-blend-difference text-white">
-      <span className="text-[20px] font-black tracking-[-0.02em]">Борщ</span>
+      <span className="font-display text-[22px]">Борщ</span>
       <a
         href="https://lordofboards.com.ua/nastilna-hra-borshch/"
         target="_blank"
@@ -49,7 +49,7 @@ function Header() {
 function Hero() {
   return (
     <section data-section="hero" className="relative flex min-h-[100vh] flex-col items-center bg-cream px-[40px] pt-[150px] text-center text-ink">
-      <h1 className="max-w-[760px] text-[56px] font-black leading-[1.05] tracking-[-0.02em]">
+      <h1 className="max-w-[820px] font-display text-[52px] leading-[1.12] tracking-[0.01em]">
         У кожного свій борщ!
         <br />
         Але продукти на всіх одні…
@@ -83,7 +83,7 @@ function Market() {
           Продукти для твого борщу не завжди приходять самі. Шукай потрібне на спільному ринку й міняй те, що маєш.
         </Note>
       </div>
-      <h2 className="mt-[40px] max-w-[700px] text-[48px] font-black leading-[1.08] tracking-[-0.02em]">
+      <h2 className="mt-[40px] max-w-[700px] font-display text-[44px] leading-[1.12] tracking-[0.01em]">
         Останній буряк?
         <br />
         За нього доведеться поторгуватися
@@ -108,7 +108,7 @@ function Pepper() {
         <Card src="./img/card-cybulya.png" alt="Карта: сусід сипле цибулю в казан" className="left-1/2 top-[30px] w-[230px] -translate-x-[70%] rotate-[-10deg]" />
         <Card src="./img/card-babusya.png" alt="Карта: бабуся біля казана зі сметаною" className="left-1/2 top-[80px] w-[230px] -translate-x-[20%] rotate-[8deg]" />
       </div>
-      <h2 className="mt-[20px] max-w-[760px] text-[48px] font-black leading-[1.08] tracking-[-0.02em]">
+      <h2 className="mt-[20px] max-w-[760px] font-display text-[44px] leading-[1.12] tracking-[0.01em]">
         Тобі підсипали перцю?
         <br />
         Добре, що ти припас сметану.
@@ -135,7 +135,7 @@ function Recipe() {
         <Card src="./img/card-babusya.png" alt="Карта: бабуся біля казана" className="left-[18%] top-[40px] w-[220px] rotate-[-8deg]" />
         <Card src="./img/card-cybulya.png" alt="Карта: цибуля" className="right-[18%] top-[0px] w-[220px] rotate-[7deg]" />
       </div>
-      <h2 className="mt-[10px] max-w-[700px] text-[48px] font-black leading-[1.08] tracking-[-0.02em]">
+      <h2 className="mt-[10px] max-w-[700px] font-display text-[44px] leading-[1.12] tracking-[0.01em]">
         Хтось розбовкав твій
         <br />
         секретний рецепт?
@@ -158,7 +158,7 @@ function Outro() {
   return (
     <section data-section="outro" className="relative flex min-h-[100vh] flex-col items-center justify-center bg-cream px-[40px] py-[120px] text-center text-ink">
       <img src="./img/box-full.png" alt="Коробка гри Борщ" className="w-[420px] max-w-full rounded-[18px] shadow-[0_40px_80px_rgba(42,26,20,0.25)]" />
-      <h2 className="mt-[50px] max-w-[700px] text-[48px] font-black leading-[1.08] tracking-[-0.02em]">Зваримо?</h2>
+      <h2 className="mt-[50px] max-w-[700px] font-display text-[44px] leading-[1.12] tracking-[0.01em]">Зваримо?</h2>
       <p className="mt-[20px] max-w-[520px] text-[18px] leading-[1.5] text-ink/80">
         2–7 гравців · від 7 років · партія 10–20 хвилин. 185 карт інгредієнтів, 21 рецепт, 20 шкварок.
       </p>
